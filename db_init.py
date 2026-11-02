@@ -3,16 +3,16 @@
 # Creation de la base de données et des collections
 # Creer une liste de monstres 
 liste_monstres = [
-    {"name": "GOBELIN", "health": 45, "attack": 12, "defense": 4}, 
-    {"name": "ZOMBIE", "health": 60, "attack": 13, "defense": 5}, 
-    {"name": "SKELETON", "health": 55, "attack": 15, "defense": 6}, 
-    {"name": "ORC", "health": 75, "attack": 16, "defense": 7},
-    {"name": "LOUPGAROU", "health": 85, "attack" : 18, "defense": 7},
-    {"name": "SPECTRE", "health": 60, "attack": 17, "defense": 9},
-    {"name": "VAMPIRE", "health": 90, "attack": 19, "defense": 9},
-    {"name": "TROLL", "health": 130, "attack": 18, "defense": 8}, 
-    {"name": "GOLEM", "health": 150, "attack": 16, "defense": 12},
-    {"name": "DRAGON", "health": 160, "attack": 22, "defense": 11}
+    {"name": "GOBELIN", "health": 45, "attack": 12, "defense": 4}, #facile
+    {"name": "ZOMBIE", "health": 60, "attack": 13, "defense": 5}, #facile
+    {"name": "SKELETON", "health": 55, "attack": 15, "defense": 6}, #facile
+    {"name": "ORC", "health": 75, "attack": 16, "defense": 7}, #moyen
+    {"name": "LOUPGAROU", "health": 85, "attack" : 18, "defense": 7}, #moyen
+    {"name": "SPECTRE", "health": 60, "attack": 17, "defense": 9}, #moyen
+    {"name": "VAMPIRE", "health": 90, "attack": 19, "defense": 9}, #difficile
+    {"name": "TROLL", "health": 130, "attack": 18, "defense": 8}, #difficile
+    {"name": "GOLEM", "health": 150, "attack": 16, "defense": 12},#difficile
+    {"name": "DRAGON", "health": 160, "attack": 22, "defense": 11} #boss
 ]
 # Creer une liste de personnages
 liste_characters = [
