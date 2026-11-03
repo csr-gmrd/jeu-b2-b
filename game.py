@@ -15,16 +15,18 @@ collection = db["jeu"]
 #       si choix valide
 #           retourner int(choix)
 #       sinon
-#           afficher ("veuillez rentrer un numéro!!")
+#           afficher ("veuillez rentrer un numéro valide !!")
 
 #si choix 1
-    # creer equipe
+    # dire au joueur de creer equipe
         #récupérer la liste des personnages
-        #boucle 3 fois 
-        #afficher au joueur la liste de personnage disponible     
-        #choix du joueur
-            #si joueur prend un personnage
-                #enlever le personnage de la liste
+        #tant que équipe < 3
+            #afficher au joueur la liste de personnage disponible     
+            #choix du joueur
+                #si joueur prend un personnage
+                    #enlever le personnage de la liste
+                    #mettre le personnage pris dans equipe
+                #redonner la liste de personnage 
 
 
 
@@ -65,6 +67,21 @@ def commencer(equipe):
                 # lancer le prochain combat
             #sinon 
                 #fermer le jeu 
+    
+    #si le joueur perd 
+        # afficher ("vous avez perdu !!")
+        # afficher :
+            # 1- recommencer une partie
+            # 2- quitter le jeu 
+
+    #   boucle infini
+    #       input()
+    #       verifier si le choix est valide
+    #       si choix valide
+    #           retourner int(choix)
+    #       sinon
+    #           afficher ("veuillez rentrer un numéro valide !!")
+
 
 #si choix 2 
     #fermer le jeu 
