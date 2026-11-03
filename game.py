@@ -9,25 +9,62 @@ collection = db["jeu"]
     # 2- quitter le jeu 
 
 #récuperer le choix du joueur 
-    #si choix 1
+#   boucle infini
+#       input()
+#       verifier si le choix est valide
+#       si choix valide
+#           retourner int(choix)
+#       sinon
+#           afficher ("veuillez rentrer un numéro!!")
 
+#si choix 1
+    # creer equipe
         #récupérer la liste des personnages
-
-        #afficher au joueur la liste de personnage disponible 
-        
+        #boucle 3 fois 
+        #afficher au joueur la liste de personnage disponible     
         #choix du joueur
             #si joueur prend un personnage
-                #enlever le personnage de la liste 
-        #boucle pour 3 personnages
+                #enlever le personnage de la liste
 
-    #si choix 2 
-        #fermer le jeu 
-    
-    #quand le joueur a finis de faire son équipe 
-        #commencer un combat 
-            #récupérer trois monstre facile 
-                #random entre 3 monstre 
-            # récupérer l'équipe du joueur 
 
-            #tour du joueur 
-                #
+
+def commencer(equipe):
+    monsters = select_monsters(3)
+    alive_team = get_alive_entities(equipe)
+    for hero in alive_team:
+        attack_random_enemy(monsters)
+
+    alive_monster = get_alive_entities(monsters)
+    for monster in alive_monster:
+        attack_random_enemy(equipe)
+    #commencer un combat (equipe)
+        #récupérer trois monstre 
+            #random entre 3 monstre 
+
+        #tour du joueur 
+            # pour chaque membre en vie 
+                # attaquer monstre en vie au hasard
+                    # recuperer les monstres en vie a partir de la liste des monstres
+                        # pour chaque mosntre
+                            # verifier si en vie
+                            # si en vie 
+                                # ajoute a la liste en_vie
+                        # renvoyer en_vie
+                    # random sur les monstres en vie
+        #tour de l'équipe de monstre
+                #monstre attaque un personnage dans l'équipe du joueur 
+
+        #boucle jusqu'a ce que une des équipes n'est plus de personnage
+
+    #si le joueur gagne 
+        #afficher : 
+            # 1- continuer
+            # 2- quitter le jeu 
+
+            #si le joueur choisis option 1 
+                # lancer le prochain combat
+            #sinon 
+                #fermer le jeu 
+
+#si choix 2 
+    #fermer le jeu 
