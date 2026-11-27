@@ -9,4 +9,3 @@ class Item:
         self.item_type = item_type
 
     dictionary = {item.name: item for item in ItemList}
-    
