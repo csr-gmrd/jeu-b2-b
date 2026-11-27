@@ -1,5 +1,4 @@
 import random
-
 from entity import Entity
 from db_init import ItemList
 
